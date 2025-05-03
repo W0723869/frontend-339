@@ -1,5 +1,5 @@
 // API Configuration
-const API_URL = "postgresql://neondb_owner:****************@ep-late-mud-a46rnbal-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require"; // Replace with your actual backend URL
+const API_URL = "https://final-project-w0723869.onrender.com/api"// url to render
 
 // DOM Elements
 const createBtn = document.getElementById('createBtn');
