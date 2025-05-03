@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:80"
+    volumes:
+      - ./:/usr/share/nginx/html
+    container_name: api-frontend

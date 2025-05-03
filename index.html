@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Demo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API Interaction Demo</h1>
+        
+        <div class="form-section">
+            <h2>Create New Item (POST)</h2>
+            <div class="input-group">
+                <label for="itemName">Name:</label>
+                <input type="text" id="itemName" placeholder="Enter item name">
+            </div>
+            <div class="input-group">
+                <label for="itemDescription">Description:</label>
+                <textarea id="itemDescription" placeholder="Enter item description"></textarea>
+            </div>
+            <button id="createBtn" class="btn">Create Item</button>
+            <div id="createResult" class="result"></div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Retrieve Items (GET)</h2>
+            <button id="getBtn" class="btn">Get All Items</button>
+            <div id="getResult" class="result">
+                <ul id="itemsList"></ul>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Delete Item (DELETE)</h2>
+            <div class="input-group">
+                <label for="deleteId">Item ID:</label>
+                <input type="text" id="deleteId" placeholder="Enter item ID to delete">
+            </div>
+            <button id="deleteBtn" class="btn">Delete Item</button>
+            <div id="deleteResult" class="result"></div>
+        </div>
+        
+        <div class="status-section">
+            <h2>API Status</h2>
+            <div id="apiStatus" class="status-indicator offline">
+                <span id="statusText">Checking connection...</span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Request Log</h2>
+            <div id="requestLog" class="log-container"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
